@@ -32,8 +32,8 @@ int minmax(int n,int max){
 
 int main(){
 	srand(time(0));
-	int c=0,y=0;
-	do{
+	int t=1,y=0;
+	while(t!=0){
 		cout<<"select:\n1.single player.\n2.AI vs AI\n";
 		cin>>y;
 		int n=0,toss=0,turn=0,v=0;
@@ -70,7 +70,7 @@ int main(){
 					if(turn) cout<<"AI won\n"<<endl;
 					else cout<<"You won"<<endl;
 					cout<<"press 1 to play again 0 to exit:";
-					cin>>c;
+					cin>>t;
 					break;
 				}
 			}
@@ -97,11 +97,11 @@ int main(){
 					if(turn) cout<<"AI 1 won the game\n";
 					else cout<<"AI 2 won the game\n";
 					cout<<"press 1 to play again or zero to exit!:";
-					cin>>c;
+					cin>>t;
 					break;
 				}
 			}	
 		}
-	}while(c!=0);
+	}
 	return 0;
 }
